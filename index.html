@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>City Hospital</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+	
+</head>
+
+<body>
+	<header class="header">
+		<nav class="nav-bar secondary-text">
+        	<div class="nav-bar-wrapper">
+        		<div class="nav-logo-wrapper">
+
+        			<span class="nav-title">City Hospital</span>
+        		</div>
+
+        		<div class="nav-menu-wrapper">
+        			<span class="nav-menu-item">Про нас</span>
+        			<span class="nav-menu-item">Новини</span>
+        			<span class="nav-menu-item">Блог</span>
+        			<i class="nav-menu-icon"></i>
+        		</div>
+
+        		<div class="menu-button"></div>
+        	</div>
+		</nav>
+	</header>
+	
+		<div class="page-wrapper">
+			<section class="registration-section">
+				<div class="registration-form-wrapper">
+
+					<object class="registration-form-image" 
+					type="image/svg+xml" 
+					data="./img/hospital.svg">
+						<svg xmlns="./img/hospital.svg"> </svg>
+					</object>
+
+					<div class="form-card flex-column">
+						<div class="form-wrapper">
+							<h2 class="form-title">Електронна черга для відвідування сімейного лікаря</h2>
+
+						    <form class="registration-form flex-column" action="submit">
+
+						    	<label class="form-label" for="name">Ім'я</label>
+						    	<input class="form-input" type="text" id="name" name="name" placeholder="Введіть ім'я" required>
+
+						    	<label class="form-label" for="phone" requridet>Телефон</label>
+						    	<input class="form-input" type="tel" id="phone" name="phone" pattern="[0-9] {3}-[0-9]{3}" placeholder="+38 (__) ___ __ __" required>
+
+						    	<label class="form-label" for="select">Лікар</label>
+						    	<select class="form-input" name="select" id="select" required>
+						    		<option value="hirurg">Хірург</option>
+						    		<option value="narkolog">Нарколог</option>
+						    		<option value="stomatolog">Стоматолог</option>
+						    		<option value="psihiatr">Психіатр</option>
+						    		<option value="pediatr">Педіатр</option>
+						    	</select>
+						    	
+
+						    	<button class="form-submit-button" type="submit">Зареєструватися</button>
+						    </form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	<footer class="footer secondary-text">
+		© 2022 City Hospital. Всі права захищені.
+	</footer>
+</body>
+</html>
